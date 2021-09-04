@@ -31,11 +31,10 @@ class MainActivity : AppCompatActivity() {
                 if (number == 0) {
                     bulb.setImageDrawable(bulbGreen)
                 } else if (number / 100000 == number % 10) {
-                    if (number / 10000 % 10 == number % 100 / 10) {
-                        if (number / 1000 % 10 == number % 1000 / 100) {
+                     (number / 10000 % 10 == number % 100 / 10) &&
+                            (number / 1000 % 10 == number % 1000 / 100)
                             bulb.setImageDrawable(bulbGreen)
-                        }
-                    }
+
                 } else {
                     bulb.setImageDrawable(bulbRed)
                 }
